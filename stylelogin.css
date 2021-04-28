@@ -1,0 +1,10 @@
+.container {
+    margin-top: 10rem;
+    padding: 24px;
+    color: white;
+    box-shadow: 3px 3px 10px 5px rgba(0, 0, 0, 0.4);
+}
+
+body {
+    background-color: #1b262c;
+}
