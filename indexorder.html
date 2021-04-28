@@ -15,8 +15,105 @@
 
 <body>
 
-    <script src="app.js "></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js " integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf " crossorigin="anonymous "></script>
+    <!-- Navabar -->
+    <nav class="navbar  fixed-top navbar-expand-lg navbar-dark bg-dark shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" onclick="home()" href="#home"><img class="nav-img" src="assets/logo.png" alt=""> Travel Admin</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="login.html"><button type="button" class="btn btn-danger">LOGOUT</button></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="wrap-content">
+            <a href="indexadmin.html"><button type="button" class="btn btn-secondary">Beranda</button></a>
+            <table class="table mt-5 table-hover text-center">
+                <thead>
+                    <tr>
+                        <th scope="col">No</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">No Phone</th>
+                        <th scope="col">Destination</th>
+                        <th scope="col">Payment Method</th>
+                        <th scope="col">Proof of payment</th>
+                        <th scope="col">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Achmad Rifqi</td>
+                        <td>achmadrifqi09@gmail.com</td>
+                        <td>081231838322</td>
+                        <td>Labuan Bajo - East Nusa Tenggara</td>
+                        <td>BCA - 12313</td>
+                        <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button></td>
+                        <td>
+                            <a href="https://api.whatsapp.com/send?phone=6282244098257&text=Terima%20kasih,%20booking%20anda%20kami%20ini%20konfirmasi.">
+                                <button type="button" class="btn btn-success" data-bs-target="#modal-manage-package" data-bs-toggle="modal">Confirm</button></a>
+                            <button type="button" class="btn btn-danger" onclick="">Reject</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Ainun najib</td>
+                        <td>ainun123@gmail.com</td>
+                        <td>0823456123</td>
+                        <td>Rinjani Mount - Lombok</td>
+                        <td>Mandiri - 127356</td>
+                        <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button></td>
+                        <td>
+                            <a href="https://api.whatsapp.com/send?phone=6282244098257&text=Terima%20kasih,%20booking%20anda%20kami%20ini%20konfirmasi.">
+                                <button type="button" class="btn btn-success" data-bs-target="#modal-manage-package" data-bs-toggle="modal">Confirm</button></a>
+                            <button type="button" class="btn btn-danger" onclick="">Reject</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Akmal maulana</td>
+                        <td>akmal098@gmail.com</td>
+                        <td>08123434512</td>
+                        <td>Raja Ampat - Papua</td>
+                        <td>BNI - 871263312</td>
+                        <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button></td>
+                        <td>
+                            <a href="https://api.whatsapp.com/send?phone=6282244098257&text=Terima%20kasih,%20booking%20anda%20kami%20ini%20konfirmasi.">
+                                <button type="button" class="btn btn-success" data-bs-target="#modal-manage-package" data-bs-toggle="modal">Confirm</button></a>
+                            <button type="button" class="btn btn-danger" onclick="">Reject</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Evidence of transfer</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/bukti-tf.jpg" alt="" width="460px">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="app.js "></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js " integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf " crossorigin="anonymous "></script>
 
 </body>
 
